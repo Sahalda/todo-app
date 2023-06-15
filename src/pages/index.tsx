@@ -1,10 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import styles from "@/styles/Home.module.css";
 import { useState } from "react";
 import { AnimatePresence, MotionConfig } from "framer-motion";
+import TaskInput from "@/components/Taskinput"; 
+
 
 
 export default function Home() {
@@ -22,7 +24,15 @@ export default function Home() {
           <h1>To do List</h1>
         </div>
         <div className={styles.Input}>
+          <TaskInput colorChange={"pink"}
+          greeting={"Hello"}
+          borderStyle={"dotted"}
+          borderColor={"lime"}
+          /> 
+          
+         
         </div>
+       
         <div className={styles.ItemsContainer}>
         </div>
       </main>
