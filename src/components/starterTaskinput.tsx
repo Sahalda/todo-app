@@ -1,7 +1,7 @@
 import { FormEvent } from "react";
 import { FieldValues, useForm } from "react-hook-form";
 import styles from "./TaskInput.module.css";
-import { Todo } from "./Todoitem";
+import { Todo } from "./TodoItem";
 
 type TaskInputProps = {
   className?: string;
