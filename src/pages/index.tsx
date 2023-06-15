@@ -6,6 +6,8 @@ import styles from "@/styles/Home.module.css";
 import { useState } from "react";
 import { AnimatePresence, MotionConfig } from "framer-motion";
 import TaskInput from "@/components/Taskinput"; 
+import StarterTaskinput from "@/components/starterTaskinput";
+import { Todo } from "@/components/TodoItem";
 
 
 
@@ -24,11 +26,9 @@ export default function Home() {
           <h1>To do List</h1>
         </div>
         <div className={styles.Input}>
-          <TaskInput colorChange={"pink"}
-          greeting={"Hello"}
-          borderStyle={"dotted"}
-          borderColor={"lime"}
-          /> 
+         <StarterTaskinput createItem={function (todoItem: Todo): void {
+            throw new Error("Function not implemented.");
+          } }/>
           
          
         </div>

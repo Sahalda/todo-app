@@ -12,7 +12,7 @@ type TaskInputForm = {
   task: string;
 };
 
-export default function TaskInput({ createItem, className }: TaskInputProps) {
+export default function StarterTaskInput({ createItem, className }: TaskInputProps) {
   const { register, handleSubmit, reset } = useForm<TaskInputForm>();
 
   const onSubmit = (data: TaskInputForm) => {
