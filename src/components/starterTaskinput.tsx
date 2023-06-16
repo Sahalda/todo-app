@@ -1,7 +1,7 @@
 import { FormEvent } from "react";
 import { FieldValues, useForm } from "react-hook-form";
 import styles from "./TaskInput.module.css";
-import { Todo } from "./TodoItem";
+import { Todo } from "./Todoitem";
 
 type TaskInputProps = {
   className?: string;
@@ -17,10 +17,9 @@ export default function StarterTaskInput({ createItem, className }: TaskInputPro
 
   const onSubmit = (data: TaskInputForm) => {
     let newItem: Todo = {
-        stuff :" Hello " 
-    //   Task: data.task,
-    //   Id: new Date().getTime().toString(),
-    //   completed: false
+      Task: data.task,
+      Id: new Date().getTime().toString(),
+      completed: false
     };
 
     createItem(newItem);
